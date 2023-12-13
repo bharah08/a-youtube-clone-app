@@ -11,6 +11,7 @@ COPY package*.json ./
 RUN npm install
 
 # Copy the rest of the application code to the working directory
+COPY .env /app
 COPY . .
 
 # Build the React app
